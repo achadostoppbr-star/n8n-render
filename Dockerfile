@@ -1,5 +1,8 @@
 FROM n8nio/n8n
 
-LABEL projeto="achadostopp"
+USER root
+
+RUN cat /etc/os-release
 
 EXPOSE 5678
+
