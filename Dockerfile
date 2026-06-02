@@ -2,10 +2,10 @@ FROM n8nio/n8n
 
 USER root
 
-RUN which apk || true
-RUN which apt-get || true
-RUN which apt || true
-RUN which yum || true
+RUN echo "APK:" && which apk || true
+RUN echo "APTGET:" && which apt-get || true
+RUN echo "APT:" && which apt || true
+RUN echo "YUM:" && which yum || true
 
 USER node
 
