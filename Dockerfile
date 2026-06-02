@@ -2,7 +2,10 @@ FROM n8nio/n8n
 
 USER root
 
-RUN cat /etc/os-release
+RUN apk update && 
+apk add --no-cache chromium
+
+USER node
 
 EXPOSE 5678
 
